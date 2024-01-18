@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <meta
+      name="description"
+      content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations."
+    />
+
+   
+<meta itemprop="name" content="Vikram Chandar's Portfolio">
+<meta itemprop="description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+
+<meta itemprop="image" content="assets/images/sharing-card.png">
+
+<meta property="og:url" content="https://ossportfolio.netlify.app">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vikram Chandar's Portfolio">
+<meta property="og:description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+<meta property="og:image" content="assets/images/sharing-card.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vikram Chandar's Portfolio">
+<meta name="twitter:description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+<meta name="twitter:image" content="assets/images/sharing-card.png">
+
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/png"
+    />
+
+    <link
+      rel="preload"
+      href="assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <title>Vikram Chandar</title>
+  </head>
+
+  <body>
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+
+      <div class="menu-btn-container">
+        <div class="container">
+          <button type="button" class="menu-btn">menu</button>
+        </div>
+      </div>
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#blog">About me</a></li>
+          <li class="nav-item"><a href="#skills">Experience</a></li>
+          <li class="nav-item"><a href="#work">Projects</a></li>
+          <li class="nav-item"><a href="#contact" data-focused="last-focused">Contact Me</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <div class="header-textbox">
+          <h1 class="h1">
+            Hi, I'm Vikram Chandar<br />
+            Student at McMaster University
+          </h1>
+          <p class="header-text">
+            A software engineering student and AI developer creating projects focused on
+            deep learning and understanding trends. 
+          </p>
+
+          <div class="header-btns">
+            <a href="#contact" class="btn btn-cta">Hire me</a>
+            <a href="#work" class="btn btn-secondary">See my work</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="article">
+        <div class="container">
+          <h2 class="h2" id="blog">About Me</h2>
+          <div class="article-boxes">
+            <article class="article-box featured-article">
+              <div class="article-textbox">
+                <div>
+                  <p class="article-text">
+                    I am a second year software engineering student at McMaster university that is aspiring to 
+                    impact any organization I participate in through my passion for addressing real world issues with my 
+                    coding skillset. 
+                  </p>
+                  <p class = "article-text">
+                    I have experience with machine learning, artificial intelligence, game development and web 
+                    development. I am always looking to improve myself and seeking challenges that can develop my skills
+                    as a developer. 
+                  </p>
+                  <p class = "article-text">
+                    I am always open to new opportunities, collaborations, and challenges. If you have a project in mind
+                    or feel that my skillset would be valued on your team, feel free to reach out. I look forward to connecting with 
+                    fellow developers in the prospect of innovating to create an exemplary product.
+                  </p>
+                  <p class = "article-text">
+                    I am always open to new opportunites and challenges, feel free to contact me through email or message me 
+                    through LinkedIn.
+                  </p>
+                </div>
+                <div class="article-info">
+                  <a href="assets/images/work/Vikram_Chandar_Resume.pdf" class="link" target="_blank" rel="noopener"
+                    >Resume</a
+                  >
+                  <span class="reaction-count">
+                    <img src="./assets/images/heart-outline.svg" alt="heart" />
+                    416
+                  </span>
+                </div>
+              </div>
+              <picture class="article-illustration">
+                <img
+                  src="assets/images/Vik.jpeg"
+                  width="400"
+                  height="400"
+                  alt="Avatar"
+                  loading="lazy"
+                />
+              </picture>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="work">
+        <div class="container">
+          <h2 class="h2" id="work">Selected Work</h2>
+          <div class="work-boxes">
+            <div class="work-box">
+              <div class="work-textbox">
+                <h3 class="h3">Stock Closing Price Forecaster</h3>
+                <p class="work-text">
+                  Developed a Recursive Neural network that predicts
+                  the adjusted closing price of tech stocks with a 
+                  root mean squared loss error of less than 0.035. 
+                  Data analysis on Tech Stocks using seaborn heatmaps, kdeplots,
+                  histplots and scatterplots was done to identify the best possible
+                  model and data selection. 
+                </p>
+                <ol class="work-technologies">
+                  <li>Python</li>
+                  <li>TensorFlow</li>
+                  <li>Pandas</li>
+                  <li>Numpy</li>
+                  <li>Seaborn</li>
+                </ol>
+
+                <div class="work-links">
+                  <a href="https://github.com/vikramC04/stockPredictionModel" target="_blank" rel="noopener" class="link"
+                    >Explore this project</a
+                  >
+
+                  <a
+                    href="https://github.com/vikramC04/stockPredictionModel"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/stockdata_image.png"
+                  alt="agency elevation"
+                  width="500"
+                />
+              </br>
+                <img
+                  loading="lazy"
+                  src="assets/images/work/stock_pairgrid.png"
+                  alt="agency elevation"
+                   
+                />
+              </picture>
+            </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <h3 class="h3">Email Spam Filter</h3>
+
+                <p class="work-text">The email spam filter is an email classification app that 
+                  leverages stacked classification models such as LogisticRegression, SVM, DecisionTree,
+                  MultinominalNB implemented into an API to classify email text as spam or not spam.
+                  In order to make the classification process user friendly, an app built in python using 
+                  customtkinter uses the machine learning model to display results. 
+                </p>
+                <ol class="work-technologies">
+                  <li>Python</li>
+                  <li>scikit-learn</li>
+                  <li>Pandas</li>
+                  <li>Numpy</li>
+                  <li>Matplotlib</li>
+                  <li>Flask</li>
+                </ol>
+                <div class="work-links">
+                  <a href="https://github.com/vikramC04/Email-Spam-Filter" target="_blank" rel="noopener" class="link"
+                    >Explore this project</a
+                  >
+                  <a
+                    href="https://github.com/vikramC04/Email-Spam-Filter"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/spam_classification.png"
+                  alt="portfolio template"
+                />
+              </picture>
+            </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <h3 class="h3">GTRacer</h3>
+                <p class="work-text">
+                  An interactive racing game developed in pygame that requires you to dodge around obstacles
+                  on multiple lanes.
+                </p>
+                <ol class="work-technologies">
+                  <li>Python</li>
+                  <li>Pygame</li>
+                  <li>pygbag</li>
+                  <li>asyncio</li>
+                </ol>
+                <div class="work-links">
+                  <a href="https://github.com/vikramC04/GTRacer" target="_blank" rel="noopener" class="link"
+                    >Explore this project</a
+                  >
+                  <a href="https://vikramc.itch.io/gtracer" target="_blank" rel="noopener" class="link"
+                    >Play game</a
+                  >
+
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/racecar.png"
+                  alt="contribute dev"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills">
+        <div class="container">
+          <h2 class="h2" id="skills">Experience</h2>
+          <div class="article-boxes">
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">Mac AI</h3>
+                  <p class="article-text">
+                    Oct 2023 - Present
+                  </p>
+                  <p class="article-text">
+                    ●  Researched nuances in linear regression algorithims specifically with problems related to sales forecasting, 
+                    car prices and insurance default predictions using different libraries like LightGBM, XGBoost, Sci-kitlearn
+                    and stacked models with different tuning of all three
+                  <p class="article-text">
+                    ● Improved sales forecasting algorithm, reducing the mean squared loss error by 33% by preprocessing data 
+                    more efficiently and using differetn scalers to make the data more readable for the model. 
+                  </p>
+                </div>
+                <div class="article-info">
+                  <a href="https://dev.to/devsyedmohsin" class="link" target="_blank" rel="noopener"
+                    >Continue reading</a
+                  >
+                  <span class="reaction-count">
+                    <img
+                      src="./assets/images/heart-outline.svg"
+                      alt="heart"
+                      loading="lazy"
+                    />
+                    47
+                  </span>
+                </div>
+              </div>
+            </article>
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">FullStack Developer - BMO</h3>
+                  <p class="article-text">
+                    Jun 2023 - Sept 2023
+                  </p>
+                  <p class="article-text">
+                    ●  Designed and implemented a maven framework to automate selenium testing on BMO investorline and 
+                    gateway application UI. New framework and selenium implementation reducd code runtime by 65%
+                  <p class="article-text">
+                    ● Verified fulfillment of limit and stop trades using SQL database queries and 
+                    added visual UI notifications for the completion status in javascript
+                  </p>
+                  <p class="article-text">
+                    ● Used SQL to validate trade orders and trade status for margin accounts above maximum allowable debt
+                  </p>
+                </div>
+                <div class="article-info">
+                  <a href="https://dev.to/devsyedmohsin" class="link" target="_blank" rel="noopener"
+                    >Continue reading</a
+                  >
+                  <span class="reaction-count">
+                    <img
+                      src="./assets/images/heart-outline.svg"
+                      alt="heart"
+                      loading="lazy"
+                    />
+                    47
+                  </span>
+                </div>
+              </div>
+            </article>
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">Google Developers Student Club</h3>
+                  <p class="article-text">
+                    Jan 2023 - Apr 2023
+                  </p>
+                  <p class="article-text">
+                    ●  Participated in Workshops related to the Google Solutions Challenge and provided criticism to students
+                    queries about solutions
+                  <p class="article-text">
+                    ● Helped Coordinate workshops related to React and Angular educating members on core concepts of javascript
+                  </p>
+                </div>
+                <div class="article-info">
+                  <a href="https://dev.to/devsyedmohsin" class="link" target="_blank" rel="noopener"
+                    >Continue reading</a
+                  >
+                  <span class="reaction-count">
+                    <img
+                      src="./assets/images/heart-outline.svg"
+                      alt="heart"
+                      loading="lazy"
+                    />
+                    47
+                  </span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <h2 class="h2" id="contact">Contact Me</h2>
+          <div class="contact-content">
+            <div class="contact-textbox">
+              <strong href="#" class="hire-alert">
+                <span class="indicator"></span>
+                Available for hire
+              </strong>
+              <p class="contact-text">
+                As a software engineer, I develop machine learning models and analyze data with 
+                a special love for accessibility and
+                performance. I tend to code things from scratch and enjoy
+                bringing ideas to life.
+              </p>
+            </div>
+            <form action="#" class="contact-form" netlify>
+                <article class="article-box featured-article">
+                  <div>
+                    <p class="article-text">
+                      Email: chandarv@mcmaster.ca
+                    </p>
+                  </div>
+                </article>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="GitHub" href="https://github.com/vikramC04" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/github.svg"
+                    alt="GitHub"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Linkedin" href="https://www.linkedin.com/in/vikram-chandar-b10508223/" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/linkedin.svg"
+                    alt="Linkedin"
+                /></a>
+              </li>
+            </ol>
+          </nav>
+          <label class="theme-switch" for="theme-switch">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch"/>
+          </label>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
